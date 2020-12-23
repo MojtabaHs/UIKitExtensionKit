@@ -13,7 +13,7 @@
 
 import UIKit
 
-extension CALayer {
+public extension CALayer {
 
     /// Round given corners with the super ellipse formula.
     /// - Parameter radius: The roundness of corners.
