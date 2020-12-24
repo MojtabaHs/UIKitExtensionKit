@@ -15,7 +15,7 @@ public extension UIEdgeInsets {
 
     /// Initial all sides of an edge insets at once.
     /// - Parameter value: A value for all edges.
-    init(all value: CGFloat) {
+    public init(all value: CGFloat) {
         self.init(horizontal: value, vertical: value)
     }
 
@@ -23,7 +23,7 @@ public extension UIEdgeInsets {
     /// - Parameters:
     ///   - horizontal: A value for all the left and right edges.
     ///   - vertical: A value for all the top and bottom edges.
-    init(horizontal: CGFloat = 0, vertical: CGFloat = 0) {
+    public init(horizontal: CGFloat = 0, vertical: CGFloat = 0) {
         self.init(top: vertical, left: horizontal, bottom: vertical, right: horizontal)
     }
 }
