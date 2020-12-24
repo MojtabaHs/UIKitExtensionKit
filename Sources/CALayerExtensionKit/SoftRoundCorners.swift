@@ -11,7 +11,6 @@
 //  Web: https://chenzook.ir
 //
 
-#if canImport(UIKit)
 import UIKit
 
 public extension CALayer {
@@ -28,4 +27,3 @@ public extension CALayer {
         mask = maskLayer
     }
 }
-#endif

@@ -15,6 +15,10 @@ let package = Package(
         .library(
             name: "CALayerExtensionKit",
             targets: ["CALayerExtensionKit"]),
+
+        .library(
+            name: "UIEdgeInsetsExtensionKit",
+            targets: ["UIEdgeInsetsExtensionKit"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -26,11 +30,16 @@ let package = Package(
         .target(
             name: "UIKitExtensionKit",
             dependencies: [
-                "CALayerExtensionKit"
+                "CALayerExtensionKit",
+                "UIEdgeInsetsExtensionKit"
             ]),
 
         .target(
             name: "CALayerExtensionKit",
-            dependencies: [])
+            dependencies: []),
+
+        .target(
+            name: "UIEdgeInsetsExtensionKit",
+            dependencies: []),
     ]
 )

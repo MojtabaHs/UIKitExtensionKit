@@ -12,3 +12,4 @@
 //
 
 @_exported import CALayerExtensionKit
+@_exported import UIEdgeInsetsExtensionKit
