@@ -1,6 +1,6 @@
 //
-//  UIKitExtensionKit.swift
-//  UIKitExtensionKit
+//  PreviousViewController.swift
+//  UINavigationControllerExtensionKit
 //
 //  Created by Seyed Mojtaba Hosseini Zeidabadi on 7/4/20.
 //  Copyright © 2020 Chenzook. All rights reserved.
@@ -11,6 +11,10 @@
 //  Web: https://chenzook.ir
 //
 
-@_exported import CALayerExtensionKit
-@_exported import UIEdgeInsetsExtensionKit
-@_exported import UINavigationControllerExtensionKit
+import UIKit
+
+public extension UINavigationController {
+
+    /// Returns the controller before the `TopViewController` if there is any.
+    var previousViewController: UIViewController? { viewControllers.last { $0 != topViewController } }
+}

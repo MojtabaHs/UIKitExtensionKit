@@ -19,6 +19,10 @@ let package = Package(
         .library(
             name: "UIEdgeInsetsExtensionKit",
             targets: ["UIEdgeInsetsExtensionKit"]),
+
+        .library(
+            name: "UINavigationControllerExtensionKit",
+            targets: ["UINavigationControllerExtensionKit"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -31,7 +35,8 @@ let package = Package(
             name: "UIKitExtensionKit",
             dependencies: [
                 "CALayerExtensionKit",
-                "UIEdgeInsetsExtensionKit"
+                "UIEdgeInsetsExtensionKit",
+                "UINavigationControllerExtensionKit"
             ]),
 
         .target(
@@ -40,6 +45,10 @@ let package = Package(
 
         .target(
             name: "UIEdgeInsetsExtensionKit",
+            dependencies: []),
+
+        .target(
+            name: "UINavigationControllerExtensionKit",
             dependencies: []),
     ]
 )
