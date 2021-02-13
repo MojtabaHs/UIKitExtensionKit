@@ -7,7 +7,7 @@ let package = Package(
     name: "UIKitExtensionKit",
     platforms: [.iOS(.v8)],
     products: [
-        // Products define the execsutables and libraries a package produces, and make them visible to other packages.
+        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "UIKitExtensionKit",
             targets: ["UIKitExtensionKit"]),
