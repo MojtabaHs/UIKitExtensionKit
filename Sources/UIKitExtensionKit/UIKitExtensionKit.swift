@@ -12,5 +12,6 @@
 //
 
 @_exported import CALayerExtensionKit
+@_exported import UIColorExtensionKit
 @_exported import UIEdgeInsetsExtensionKit
 @_exported import UINavigationControllerExtensionKit
