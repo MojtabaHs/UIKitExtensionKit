@@ -22,7 +22,7 @@ public extension UIColor {
     /// - Blue value
     /// - Green value
     /// - Alpha value (optional)
-    public convenience init?(hex: String) {
+    convenience init?(hex: String) {
         let r, g, b, a: CGFloat
         var hexColor = hex
 
