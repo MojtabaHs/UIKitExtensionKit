@@ -15,3 +15,4 @@
 @_exported import UIColorExtensionKit
 @_exported import UIEdgeInsetsExtensionKit
 @_exported import UINavigationControllerExtensionKit
+@_exported import UIResponderExtensionKit

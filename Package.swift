@@ -19,7 +19,7 @@ let package = Package(
         .library(
             name: "UIEdgeInsetsExtensionKit",
             targets: ["UIEdgeInsetsExtensionKit"]),
-        
+
         .library(
             name: "UIColorExtensionKit",
             targets: ["UIColorExtensionKit"]),
@@ -27,6 +27,10 @@ let package = Package(
         .library(
             name: "UINavigationControllerExtensionKit",
             targets: ["UINavigationControllerExtensionKit"]),
+
+        .library(
+            name: "UIResponderExtensionKit",
+            targets: ["UIResponderExtensionKit"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -42,6 +46,7 @@ let package = Package(
                 "UIEdgeInsetsExtensionKit",
                 "UIColorExtensionKit",
                 "UINavigationControllerExtensionKit",
+                "UIResponderExtensionKit",
             ]),
 
         .target(
@@ -58,6 +63,10 @@ let package = Package(
 
         .target(
             name: "UINavigationControllerExtensionKit",
+            dependencies: []),
+
+        .target(
+            name: "UIResponderExtensionKit",
             dependencies: []),
     ]
 )
