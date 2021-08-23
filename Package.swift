@@ -31,6 +31,10 @@ let package = Package(
         .library(
             name: "UIResponderExtensionKit",
             targets: ["UIResponderExtensionKit"]),
+
+        .library(
+            name: "UIScreenExtensionKit",
+            targets: ["UIScreenExtensionKit"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -67,6 +71,10 @@ let package = Package(
 
         .target(
             name: "UIResponderExtensionKit",
+            dependencies: []),
+
+        .target(
+            name: "UIScreenExtensionKit",
             dependencies: []),
     ]
 )
